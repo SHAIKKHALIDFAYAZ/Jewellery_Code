@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <title>Al-Arman Jewellers</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Al-Arman Jewellers</a>
+        <nav>
+            <a href="#offers">Offers</a>
+            <a href="#collections">Collections</a>
+            <a href="#price">Price Updates</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <figure>
+                <img src="./assets/home-poster.png" alt="Unique designs at lowest price in market">
+                <figcaption>Unique designs at lowest price in market</figcaption>
+            </figure>
+        </section>
+
+        <section id="offers">
+            <article style="background-image: url('./assets/gold-ring.png')">
+                <h3>20% off on Gold Jewellery</h3>
+                <button>Buy now</button>
+                <details>
+                    <summary>Terms and Conditions</summary>
+                    No return, No exchange.
+                </details>
+            </article>
+            <article style="background-image: url('./assets/diamond-ring.png')">
+                <h3>10% off on Diamond Jewellery</h3>
+                <button>Buy now</button>
+                <details>
+                    <summary>Terms and Conditions</summary>
+                    No return, No exchange.
+                </details>
+            </article>
+            <article style="background-image: url('./assets/silver-ring.png')">
+                <h3>15% off on Silver Jewellery</h3>
+                <button>Buy now</button>
+                <details>
+                    <summary>Terms and Conditions</summary>
+                    No return, No exchange.
+                </details>
+            </article>
+        </section>
+
+        <section id="collections">
+            <div id="slider-container">
+                <span class="btn" onclick="slideRight()"></span>
+                <span class="btn" onclick="slideLeft()"></span>
+                <div id="slider">
+                    <article class="slide">
+                        <figure>
+                            <img src="./assets/collection1.png" alt="Gold ring">
+                            <figcaption>Gold ring</figcaption>
+                        </figure>
+                        <p><del>₹.50,000</del></p>
+                        <h3>₹.40,000</h3>
+                        <button>Buy now</button>
+                    </article>
+                    <article class="slide">
+                        <figure><img src="./assets/collection2.png" alt="Diamond ring"></figure>
+                        <figcaption>Diamond ring</figcaption>
+                        <p><del>₹.5,00,000</del></p>
+                        <h3>₹.4,50,000</h3>
+                        <button>Buy now</button>
+                    </article>
+                    <article class="slide">
+                        <figure><img src="./assets/collection3.png" alt="Silver ring"></figure>
+                        <figcaption>Silver ring</figcaption>
+                        <p><del>₹.20,000</del></p>
+                        <h3>₹.17,000</h3>
+                        <button>Buy now</button>
+                    </article>
+                    <article class="slide">
+                        <figure><img src="./assets/collection4.png" alt="Gold Necklace"></figure>
+                        <figcaption>Gold Necklace</figcaption>
+                        <p><del>₹.3,00,000</del></p>
+                        <h3>₹.2,40,000</h3>
+                        <button>Buy now</button>
+                    </article>
+                    <article class="slide">
+                        <figure><img src="./assets/collection5.png" alt="Gold Chain"></figure>
+                        <figcaption>Gold Chain</figcaption>
+                        <p><del>₹.1,00,000</del></p>
+                        <h3>₹.80,000</h3>
+                        <button>Buy now</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="price">
+            <h2>Today's Market Price</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Today's Price</th>
+                        <th>Yesterday's Price</th>
+                        <th>Price Change</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>8 Gram 24K Gold</td>
+                        <td>₹.5,000</td>
+                        <td>₹.4,500</td>
+                        <td>↓ ₹.500</td>
+                    </tr>
+                    <tr>
+                        <td>1 Carat Diamond</td>
+                        <td>₹.50,000</td>
+                        <td>₹.45,000</td>
+                        <td>↑ ₹.5,000</td>
+                    </tr>
+                    <tr>
+                        <td>100 Gram Silver</td>
+                        <td>₹.2,000</td>
+                        <td>₹.1,800</td>
+                        <td>↓ ₹.200</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="#">Locate us</a>
+            <a href="#">+00965 66810740</a>
+            <a href="#">+00965-66973251</a>
+            <a href="#">alarmanjewellers@gmail.com</a>
+        </nav>
+
+        <nav>
+            <a href="#">Kuwait-Mubarakiya-AlRaya Gold Center-2nd Floor-shop No. 15</a>
+            <a href="#">Bangalore</a>
+            <a href="#">Kochi</a>
+            <a href="#">Hyderabad</a>
+        </nav>
+
+        <nav>
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms of use</a>
+            <a href="#">License</a>
+            <a href="#">Cookie preferences</a>
+        </nav>
+
+        <nav>
+            <div class="footer__block footer__block--social" style="--desktop-width: 13%"><p class="h5 footer__block__title">Social</p>
+                <ul class="socials">
+                    <li>
+                        <span class="icon-fallback-text">Instagram</span>
+                        <a href="https://www.instagram.com/accessorizeindiaofficial/" title="Accessorize India on Instagram" target="_blank" class="social-link"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-instagram" viewBox="0 0 24 24"><path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" stroke="#000" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 16V8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5z" stroke="#000"></path><path d="m17.5 6.51.01-.011" stroke="#000" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+</body>
+
+</html>
